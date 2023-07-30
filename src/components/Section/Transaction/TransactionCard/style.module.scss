@@ -1,0 +1,51 @@
+.li{
+    background-color:var(--grey-1); 
+    height: 20%;
+    min-height: 20%;
+    max-height: 20%;
+    padding: 8px 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.entryLi {
+    border-left: 4px solid var(--color-secondary); 
+    border-radius: 4px 0px 0px 4px;
+
+}
+.exitLi{
+    border-left: 4px solid var(--grey-3);
+    border-radius: 4px 0px 0px 4px;
+
+}
+.divTextTransaction{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    
+    min-height: 100%;
+    max-height: 100%; 
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+    align-items: flex-end;
+    justify-content: center;
+}
+.button{
+    padding: 6px;
+    background-color: var(--grey-2);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #212529;
+}
+.valueMoney{
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--grey-4);
+
+}

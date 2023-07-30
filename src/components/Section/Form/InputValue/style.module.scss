@@ -1,0 +1,21 @@
+.divValue {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    border: 2px solid transparent;
+    border-radius: 0.5rem;
+    background-color: var(--grey-1);
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        appearance: none;
+    }
+}

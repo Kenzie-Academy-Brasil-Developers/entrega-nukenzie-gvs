@@ -1,0 +1,17 @@
+.container {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1% 13%;
+    display: flex;
+    gap: 2rem;
+    margin-top: 4vh;
+    flex-wrap: wrap;
+    height: 70vh;
+}
+
+.divForm {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
