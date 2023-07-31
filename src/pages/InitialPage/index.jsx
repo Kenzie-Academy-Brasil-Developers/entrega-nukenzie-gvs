@@ -8,6 +8,7 @@ import style from "./style.module.scss";
 
 function HomePage() {
   const [transList, setTransList] = useState([]);
+  console.log(transList);
   function addTrans(formData) {
     const newTrans = { ...formData, id: uuidv4() };
     setTransList([...transList, newTrans]);
@@ -17,7 +18,11 @@ function HomePage() {
     setTransList(newTransList);
   }
   const totalValueList = transList.reduce((totalValueSum, trans) => {
-    return totalValueSum + Number(trans.value);
+    if(trans.type == "Despesas"){
+      return totalValueSum -= Number(trans.value)
+    }else{
+      return totalValueSum += Number(trans.value);
+    }
   }, 0);
 
   return (
